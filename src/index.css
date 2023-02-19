@@ -14,11 +14,27 @@ code {
 
 ul {
   display: flex;
-  float: right;
+
 
 }
 
 ul >li{
   list-style: none;
   margin-left: 10px;
+}
+
+
+
+.learn-wrap{
+  background-color: rgb(9, 9, 73);
+  width: 200px;
+  height: 100px;
+  color: white;
+}
+.learn-wrap >p >a{
+  color: white;
+}
+
+footer{
+  background-color: black;
 }
