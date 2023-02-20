@@ -17,7 +17,10 @@ export default function Content() {
            collaborating on the different types of tasks on the platform helps to invest time,
             and gives you something remunerable to do during quarantine. 
             That’s one of the great benefits of working from home, and Appen is definitely an
-          excellent platform to do it, with a wide variety of work to do."/>
+          excellent platform to do it, with a wide variety of work to do."
+          name='Job'
+          country='Kenya'
+          />
       </section>
      
     </div>
