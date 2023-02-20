@@ -31,8 +31,10 @@ ul >li{
   display: block;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  
+  margin-top: 5%;
+  width: 30%;
+  margin-left: 100px;
+  align-self: center;
 }
 
 .learn-wrap>p{
@@ -86,10 +88,10 @@ ul >li{
 
 /* ul */
 #ul-footer{
-  margin-left: 85vw;
+  /* margin-left: 85vw; */
 }
 #ul-nav{
-  margin-left: 85vw;
+  /* margin-left: 85vw; */
 }
 
 
@@ -97,6 +99,7 @@ ul >li{
 #row-target{
   background-color:rgb(4, 45, 68);
   color: white;
+  padding: 10px;
 }
 
 footer{
