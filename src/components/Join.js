@@ -4,13 +4,13 @@ import appen from '../images/Appen-Connect-Flower.png'
 
 export default function Join() {
   return (
-    <div className=''>
-         
-            <div class="col-sm-6 col-md-6  custom-jumbotron  ">
+    <div >
+      <div className='row'>
+      <div class="col-sm-6 col-md-6  ">
                 <h1>Join Our Global</h1>
                     
             
-                <h1>community</h1> 
+                <h1 >community</h1> 
                 <h1>
                     <small>Over one million people who embrace flexible work</small>    
                 </h1>   
@@ -26,6 +26,9 @@ export default function Join() {
                 <img  src={appen}  width="390px"
               className="img-responsive"  alt="" />
             </div>
+            
+      </div>
+         
             
       
     </div>

@@ -26,12 +26,76 @@ ul >li{
 
 
 .learn-wrap{
-  background-color: rgb(9, 9, 73);
-  width: 200px;
-  height: 100px;
-  color: white;
+ color: white;
+  border: 1px solid white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.learn-wrap>p{
+  align-self: center;
 }
 .learn-wrap >p >a{
+  color: white;
+
+}
+
+/* buttons */
+#button-wrapper{
+  
+}
+
+
+#how-it-works{
+  border: 1px solid grey;
+  margin-left: 10px;
+  background: rgb(17, 17, 17);
+}
+
+#apply{
+  border: 1px solid grey;
+  color: white;
+  background: rgb(17, 17, 17);
+  
+}
+#apply>a{
+  color: white;
+  text-decoration: none;
+}
+#how-it-works>a{
+  color: white;
+  text-decoration: none;
+}
+#apply>a:hover{
+  color: black;
+}
+#how-it-works>a:hover{
+  color: black;
+}
+
+
+#apply:hover{
+  background: white;
+}
+#how-it-works:hover{
+  background: white;
+}
+
+/* ul */
+#ul-footer{
+  margin-left: 85vw;
+}
+#ul-nav{
+  margin-left: 85vw;
+}
+
+
+
+#row-target{
+  background-color:rgb(4, 45, 68);
   color: white;
 }
 

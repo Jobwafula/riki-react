@@ -10,16 +10,11 @@ function App() {
   
   return (
     
-    <div>
-      <Navbar />
-      
-      <Content />
-      <Footer />
-      
-
-      
+    <div >
+        <Navbar /> 
+        <Content />
+        <Footer />   
     </div>
   );
 }
-
 export default App;
