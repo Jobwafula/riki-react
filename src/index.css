@@ -37,6 +37,13 @@ ul >li{
   align-self: center;
 }
 
+.success-background{
+  background-image: url('./job.jpeg');
+  background-repeat: no-repeat;
+  background-position: 90% 30%;
+  background-size: 400px;
+}
+
 .learn-wrap>p{
   align-self: center;
 }
