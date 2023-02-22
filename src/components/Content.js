@@ -3,6 +3,7 @@ import Join from './Join'
 import Target from './Target'
 import Provider from './Provider'
 import Success from './Success'
+import Tabletasks from './Tabletasks'
 
 export default function Content() {
   return (
@@ -10,6 +11,7 @@ export default function Content() {
       <Join />
       <section id='target'>
          <Target />
+         <Tabletasks />
          <Provider />
          <Success text="I have been working from home for about 4 years. Currently,
           in these difficult times due to the Covid-19 pandemic, 
