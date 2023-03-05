@@ -5,7 +5,8 @@ export default function Footer() {
   return (
     <footer>
       <div className='row'>
-        <div className='col-sm-6'>
+        <div className='col-sm-6' >
+          <div id='footer-links'>
             <a>Home</a>
             <a>How it works</a>
              <a>Company</a> 
@@ -14,6 +15,8 @@ export default function Footer() {
             <a>Login</a>
             <a>Contact Support</a>   
 
+          </div>
+            
             <div>
                 <a>Visit main website</a>
             </div>
