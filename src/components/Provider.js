@@ -1,8 +1,15 @@
 import React from 'react'
 
 export default function Provider() {
+
+  const styles = {
+    container:{
+      fontSize:"2rem",
+      padding:'20px'
+    }
+  }
   return (
-    <div className='container' style={{padding:'20px'}}>
+    <div className='container' style={styles.container}>
         <h1>Global Leading Provider of Flexible Work</h1>
       <p>We have over 20 years of experience in providing data collection and 
         </p>
