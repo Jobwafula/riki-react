@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Tabletasks() {
   return (
-    <div>
+    <div className='container'>
 
         <div>
             <h1> Available tasks</h1>
