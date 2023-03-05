@@ -4,6 +4,9 @@ import Target from './Target'
 import Provider from './Provider'
 import Success from './Success'
 import Tabletasks from './Tabletasks'
+import Dataone from './Dataone'
+import Ethics from './Ethics'
+import LatestBloq from './LatestBloq'
 
 export default function Content() {
   return (
@@ -11,6 +14,7 @@ export default function Content() {
       <Join />
       <section id='target'>
          <Target />
+         <Dataone />
          <Tabletasks />
          <Provider />
          <Success text="I have been working from home for about 4 years. Currently,
@@ -23,6 +27,8 @@ export default function Content() {
           name='Job'
           country='Kenya'
           />
+          <Ethics />
+          <LatestBloq />
       </section>
      
     </div>
