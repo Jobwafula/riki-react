@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import Join from './components/Join';
+
 import Content from './components/Content';
 import Footer from './components/Footer';
+import ApplyLogin from './components/ApplyLogin';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     
     <div >
         <Navbar /> 
+        <ApplyLogin />
         <Content />
         <Footer />   
     </div>
