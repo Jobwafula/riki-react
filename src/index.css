@@ -98,7 +98,7 @@ ul >li{
   /* margin-left: 85vw; */
 }
 #ul-nav{
-  /* margin-left: 85vw; */
+  margin-left: 85vw; 
 }
 
 
@@ -111,4 +111,20 @@ ul >li{
 
 footer{
   background-color: black;
+
+}
+#footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-links >a{
+  
+
+  color: white;
+  /* text-decoration: none; */
+  
+}
+#footer-links>a:hover{
+  color: blue;
 }
