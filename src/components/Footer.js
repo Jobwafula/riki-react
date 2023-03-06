@@ -1,22 +1,29 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 
 
 export default function Footer() {
+
+    const NavLinkStyles = ({isActive}) =>{
+      return {
+        fontWeight:isActive? 'bold':'normal',
+         textDecoration:isActive? 'none':'normal'
+      }
+    }
+
   return (
     <footer>
       <div className='row'>
         <div className='col-sm-6' >
           <div id='footer-links'>
-            <Link to='/'>Home</Link>
+            <NavLink to='/'>Home</NavLink>
             
-            <Link >How it works</Link>
-            <Link>Company</Link>
-            <Link>Bloq</Link>
-            <Link to='/Apply'>Apply</Link>
-            <Link>Login</Link>
-            <Link>Contact support</Link>  
+            <NavLink style={NavLinkStyles} to='/HowItWorks' >How it works</NavLink>
+            <NavLink style={NavLinkStyles} to='/Company'>Company</NavLink>
+            <NavLink style={NavLinkStyles} to='/Bloq'>Bloq</NavLink>
+            <NavLink style={NavLinkStyles} to='/Apply'>Apply</NavLink>
+            <NavLink style={NavLinkStyles} to='/ContactSupport'>Contact support</NavLink>  
 
           </div>
             

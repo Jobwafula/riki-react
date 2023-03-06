@@ -8,6 +8,10 @@ import ApplyLogin from './components/ApplyLogin';
 import {Routes,Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Apply from './pages/Apply';
+import Company from './pages/Company';
+import HowItWorks from './pages/HowItWorks';
+import Bloq from './pages/Bloq';
+import ContactSupport from './pages/ContactSupport';
 
 
 function App() {
@@ -16,6 +20,10 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='Apply' element={<Apply />}></Route>
+      <Route path='Company' element={<Company />}></Route>
+      <Route path='HowItWorks' element={<HowItWorks />}></Route>
+      <Route path='Bloq' element={<Bloq />}></Route>
+      <Route path='ContactSupport' element={<ContactSupport />}></Route>
     </Routes>
   )
 }
