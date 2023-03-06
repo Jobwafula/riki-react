@@ -24,12 +24,17 @@ export default function Dataone() {
         },
         text:{
             fontSize:"2rem"
+        },
+        image:{
+          width:"100px",
+          height:"100px"
         }
      }
 
 
     const arrayelement = data.map( (item)=>(
         <div style={styles.item} key={item.id}>
+            <img src={process.env.PUBLIC_URL+`images`+item.img} alt=''/>
             <h2 style={styles.title}>{item.title}</h2> 
             <p style={styles.text}>{item.text}</p>
         </div>

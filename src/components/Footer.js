@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 
 export default function Footer() {
@@ -7,13 +9,14 @@ export default function Footer() {
       <div className='row'>
         <div className='col-sm-6' >
           <div id='footer-links'>
-            <a>Home</a>
-            <a>How it works</a>
-             <a>Company</a> 
-             <a>Bloq</a>
-            <a>Apply</a>
-            <a>Login</a>
-            <a>Contact Support</a>   
+            <Link to='/'>Home</Link>
+            
+            <Link >How it works</Link>
+            <Link>Company</Link>
+            <Link>Bloq</Link>
+            <Link to='/Apply'>Apply</Link>
+            <Link>Login</Link>
+            <Link>Contact support</Link>  
 
           </div>
             
