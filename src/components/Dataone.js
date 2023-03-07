@@ -1,6 +1,7 @@
 import React from 'react'
 import data from './data'
 
+
 export default function Dataone() {
 
 
@@ -34,7 +35,7 @@ export default function Dataone() {
 
     const arrayelement = data.map( (item)=>(
         <div style={styles.item} key={item.id}>
-            <img src={process.env.PUBLIC_URL+`images`+item.img} alt=''/>
+            <img src={item.img} alt=''/>
             <h2 style={styles.title}>{item.title}</h2> 
             <p style={styles.text}>{item.text}</p>
         </div>

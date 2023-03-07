@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function ApplyLogin() {
 
@@ -20,8 +21,8 @@ export default function ApplyLogin() {
       </div>
       <div>
                  <div id="button-wrapper">
-                    <button id="apply" className="btn-lg  "><a href="./account.html">Apply</a></button>
-                    <button id="how-it-works" className="btn-lg  "><a>Login</a></button>
+                    <button id="apply" className="btn-lg  "><NavLink to='/Apply'>Apply</NavLink></button>
+                    <button id="how-it-works" className="btn-lg  "><NavLink to='/Login'>Login</NavLink></button>
                 </div>
       </div>
     </div>

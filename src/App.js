@@ -12,6 +12,7 @@ import Company from './pages/Company';
 import HowItWorks from './pages/HowItWorks';
 import Bloq from './pages/Bloq';
 import ContactSupport from './pages/ContactSupport';
+import Login from './pages/Login';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='Apply' element={<Apply />}></Route>
+      <Route path='Login' element={<Login />}></Route>
       <Route path='Company' element={<Company />}></Route>
       <Route path='HowItWorks' element={<HowItWorks />}></Route>
       <Route path='Bloq' element={<Bloq />}></Route>
