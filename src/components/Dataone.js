@@ -1,8 +1,24 @@
 import React from 'react'
 import data from './data'
+import { useState,useEffect } from 'react'
 
 
 export default function Dataone() {
+   //is small screen?
+    
+   const [isMobile,setIsMobile]= useState(false)
+   useEffect(()=>{
+       function handleResize(){
+           setIsMobile(window.innerWidth<=768);
+       }
+       handleResize() //initialized state
+       window.addEventListener('resize',handleResize)
+
+       return ()=>window.removeEventListener('resize',handleResize)
+       
+   },[]
+       
+   )
 
 
      const styles ={
@@ -14,8 +30,8 @@ export default function Dataone() {
         },
 
         item:{
-            display:"inline-block",
-            width:"50%",
+            display:isMobile?"block":"inline-block",
+            width:isMobile?"100%":"50%",
             padding:"10px"
         },
          title:{
@@ -34,7 +50,7 @@ export default function Dataone() {
 
 
     const arrayelement = data.map( (item)=>(
-        <div className='col-sm-6' style={styles.item} key={item.id}>
+        <div style={styles.item} key={item.id}>
             <img src={item.img} alt=''/>
             <h2 style={styles.title}>{item.title}</h2> 
             <p style={styles.text}>{item.text}</p>

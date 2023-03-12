@@ -1,7 +1,23 @@
 import React from 'react'
+import {useState,useEffect} from 'react'
 import ethics from './Ethicsdata'
 
 export default function Ethics() {
+   //is small screen?
+    
+   const [isMobile,setIsMobile]= useState(false)
+   useEffect(()=>{
+       function handleResize(){
+           setIsMobile(window.innerWidth<=768);
+       }
+       handleResize() //initialized state
+       window.addEventListener('resize',handleResize)
+
+       return ()=>window.removeEventListener('resize',handleResize)
+       
+   },[]
+       
+   )
      //  styles
 
      const styles = {
@@ -12,9 +28,9 @@ export default function Ethics() {
             fontSize:"2rem"
         },
         item:{
-            display:"inline-block",
-            width:"30%",
-            height:"100px",
+            display:isMobile?"block":"inline-block",
+            width:isMobile?"100%":"30%",
+            height:isMobile?"200px":"100px",
             padding:"20px",
             
         },

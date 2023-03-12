@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Apply from './pages/Apply';
 import Company from './pages/Company';
 import HowItWorks from './pages/HowItWorks';
-import Bloq from './pages/Bloq';
+import Blog from './pages/Blog';
 import ContactSupport from './pages/ContactSupport';
 import Login from './pages/Login';
 import Upload from './pages/Upload';
@@ -25,7 +25,7 @@ function App() {
       <Route path='Login' element={<Login />}></Route>
       <Route path='Company' element={<Company />}></Route>
       <Route path='HowItWorks' element={<HowItWorks />}></Route>
-      <Route path='Bloq' element={<Bloq />}></Route>
+      <Route path='Bloq' element={<Blog />}></Route>
       <Route path='ContactSupport' element={<ContactSupport />}></Route>
       <Route path='Upload' element={<Upload />}></Route>
     </Routes>

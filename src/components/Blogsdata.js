@@ -1,4 +1,4 @@
-const bloq = [{
+const blog = [{
     id:1,
     image:"",
     text:"contributors share what is like working on a long term {company} project"
@@ -20,4 +20,4 @@ const bloq = [{
         text:"5 ways to reducing stress"
     }
 ]
-export default bloq;
+export default blog;

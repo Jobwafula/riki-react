@@ -6,7 +6,7 @@ import Success from './Success'
 import Tabletasks from './Tabletasks'
 import Dataone from './Dataone'
 import Ethics from './Ethics'
-import LatestBloq from './LatestBloq'
+import LatestBlog from './LatestBlog'
 
 export default function Content() {
   return (
@@ -28,7 +28,7 @@ export default function Content() {
           country='Kenya'
           />
           <Ethics />
-          <LatestBloq />
+          <LatestBlog />
       </section>
      
     </div>
