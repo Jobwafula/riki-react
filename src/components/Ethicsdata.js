@@ -1,7 +1,7 @@
 const data = [
   {
       id:1,
-      img:"",
+      img:"https://s34307.pcdn.co/wp-content/uploads/2020/06/Group-26.svg",
       title:"Fair Pay",
       ethicmsg:"Our goal is to pay our crowd above minimum wage in every market around the world where we operate."
   },

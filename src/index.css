@@ -38,12 +38,16 @@ ul >li{
 }
 
 .success-background{
-  background-image: url('./job.jpeg');
+ background-image: url('./job.jpeg');
   background-repeat: no-repeat;
   background-position: 90% 30%;
   background-size: 400px;
 }
-
+@media(max-width:768px){
+  .success-background{
+    background-image: none;
+  }
+}
 .learn-wrap>p{
   align-self: center;
 }

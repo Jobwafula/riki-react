@@ -10,6 +10,7 @@ export default function Footer() {
         fontWeight:isActive? 'bold':'normal',
          textDecoration:isActive? 'none':'normal'
       }
+      
     }
 
   return (

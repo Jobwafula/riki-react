@@ -34,7 +34,7 @@ export default function Dataone() {
 
 
     const arrayelement = data.map( (item)=>(
-        <div style={styles.item} key={item.id}>
+        <div className='col-sm-6' style={styles.item} key={item.id}>
             <img src={item.img} alt=''/>
             <h2 style={styles.title}>{item.title}</h2> 
             <p style={styles.text}>{item.text}</p>

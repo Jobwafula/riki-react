@@ -13,6 +13,7 @@ import HowItWorks from './pages/HowItWorks';
 import Bloq from './pages/Bloq';
 import ContactSupport from './pages/ContactSupport';
 import Login from './pages/Login';
+import Upload from './pages/Upload';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='HowItWorks' element={<HowItWorks />}></Route>
       <Route path='Bloq' element={<Bloq />}></Route>
       <Route path='ContactSupport' element={<ContactSupport />}></Route>
+      <Route path='Upload' element={<Upload />}></Route>
     </Routes>
   )
 }
