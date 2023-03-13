@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {useState,useEffect} from 'react'
 import blog from './Blogsdata'
 
@@ -61,7 +62,7 @@ export default function LatestBlog() {
             <img src='' alt=''/>
             <h2 style={{color:"red"}}>Blog</h2>
             <p>{item.text}</p>
-            <p>Read more</p>
+            <Link to=''>Read more</Link>
         </div>
     ));
   return (
