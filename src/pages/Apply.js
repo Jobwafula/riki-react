@@ -43,7 +43,7 @@ setCountry(
   const handleSubmit=(event)=>{
     event.preventDefault()
      
-     const data = {
+     const user = {
       email:email,
       firstName:firstName,
       lastName:lastName,
@@ -53,7 +53,7 @@ setCountry(
 
     // axios post
 
-    axios.post("http://github.com/kenreagan/sqlalchemymaps",data)
+    axios.post("http://github.com/kenreagan/sqlalchemymaps",user)
     .then(response=>{
       console.log("data sent successfully")
     })

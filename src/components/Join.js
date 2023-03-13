@@ -6,12 +6,15 @@ import appen from '../images/Appen-Connect-Flower.png'
 export default function Join() {
 
   const styles={
+    main:{
+        padding :"0px"
+    },
     htext:{
       fontSize:'6rem'
     }
   }
   return (
-    <div >
+    <div style={styles.main} >
       <div className=' row'>
       <div className=" col-sm-6 col-md-6  ">
                 <div className='container'>

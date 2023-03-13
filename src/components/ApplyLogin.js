@@ -13,10 +13,10 @@ export default function ApplyLogin() {
     <div style={styles.container}>
       <div>
             <ul>
-                <li>How it works</li>
-                <li>FAQS</li>
-                <li>Company</li>
-                <li>Bloq</li>
+                <li><NavLink>How it Works</NavLink></li>
+                <li><NavLink>FAQS</NavLink></li>
+                <li><NavLink>Company</NavLink></li>
+                <li><NavLink>Blog</NavLink></li>
             </ul>
       </div>
       <div>
