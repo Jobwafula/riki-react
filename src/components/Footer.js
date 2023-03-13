@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink,Link} from 'react-router-dom';
 
 
 
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
             
             <div>
-                <a>Visit main website</a>
+                <Link>Visit main website</Link>
             </div>
         </div>
         <div className='col-sm-6'>

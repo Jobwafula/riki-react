@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 const NavLinkStyles = ({isActive}) =>{
     return {
       fontWeight:isActive? 'bold':'normal',
@@ -65,7 +65,7 @@ const Upload = () => {
           </div>
             
             <div>
-                <a>Visit main website</a>
+                <Link to='/'>visit main website</Link>
             </div>
         </div>
         <div className='col-sm-6'>

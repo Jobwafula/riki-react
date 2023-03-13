@@ -1,51 +1,80 @@
-import React from 'react'
+import React, {useState}from 'react'
 import {NavLink} from 'react-router-dom'
+import axios from 'axios'
+
 export default function Apply() {
-  const [email,setEmail] = React.useState('example@gmail.com')
-  const [lastName,setLastName] = React.useState('Wafula')
-  const [firstName,setFirstName] = React.useState('Job')
-  const [password,setPassword] = React.useState(123456)
-  const [country,setCountry] = React.useState("Uganda")
+  const [email,setEmail] = useState('example@gmail.com')
+  const [lastName,setLastName] = useState('Wafula')
+  const [firstName,setFirstName] = useState('Job')
+  const [password,setPassword] = useState(123456)
+  const [country,setCountry] = useState("Uganda")
+
+  //email state
+ const  handleEmail=(event)=>{
+      
+  setEmail(event.target.value)
+}
+// first name state
+const  handlFirstName=(event)=>{
+    
+  setFirstName(event.target.value)
+}
+// lastname state
+const  handlLastName=(event)=>{
+    
+setLastName(
+  event.target.value
+)
+}
+// password state
+const  handlePassword=(event)=>{
+    
+setPassword(event.target.value)
+}
+// country
+const handleCountry =(event)=>{
+setCountry(
+  event.target.value
+)
+}
+
 
   // form handle && fetch api
   const handleSubmit=(event)=>{
     event.preventDefault()
-     alert(`${email} + ${firstName} + ${lastName}: success`)
-     const data = {email,firstName,lastName,password,country}
-    //  fetch(){
+     
+     const data = {
+      email:email,
+      firstName:firstName,
+      lastName:lastName,
+      password:password,
+      country:country}
 
-    //  }
+
+    // axios post
+
+    axios.post("http://github.com/kenreagan/sqlalchemymaps",data)
+    .then(response=>{
+      console.log("data sent successfully")
+    })
+    .catch(error=>{
+      console.log(error)
+    })
      
   }
-  //email state
- const  handleEmail=(event)=>{
-      
-    setEmail(event.target.value)
-  }
-  // first name state
-  const  handlFirstName=(event)=>{
-      
-    setFirstName(event.target.value)
-}
-// lastname state
-const  handlLastName=(event)=>{
-      
-  setLastName(
-    event.target.value
-  )
-}
-// password state
-const  handlePassword=(event)=>{
-      
-  setPassword(event.target.value)
-}
-// country
-const handleCountry =(event)=>{
-  setCountry(
-    event.target.value
-  )
-}
 
+  //axios get data
+  axios.get("http://github.com/kenreagan/sqlalchemymaps",{
+    headers: {
+      "Content-Type":'application/json'
+    }
+  })
+  .then(response=>{
+    console.log(response.data)
+  })
+  .catch(error=>{
+    console.log(error)
+  })
 
 
   const NavLinkStyles = ({isActive}) =>{

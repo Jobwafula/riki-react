@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Target() {
   return (
@@ -8,7 +9,7 @@ export default function Target() {
                     <h3>we have put together helpful tips and resources to keep you safe</h3>
                 </div>
                 <div className='col-sm-6 learn-wrap'>
-                    <p className='text-center'><a className='text-center'>learn more</a></p>
+                    <p className='text-center'><Link>learn more</Link></p>
                 </div>
     </div>
   )
