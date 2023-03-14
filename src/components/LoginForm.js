@@ -19,7 +19,7 @@ export default function LoginForm({onLogin}) {
         }
     }
   return (
-    <div className='text-center'>
+    <div  className='text-center'>
       <form>
         <div style={styles.margin} >
             <label>Username</label>
@@ -29,7 +29,20 @@ export default function LoginForm({onLogin}) {
             <label>password</label>
             <input onChange={handlePassword} value={password} type='password' />
         </div>
-        <button style={styles.margin} onClick ={onLogin}type='submit'>Login</button>
+        <button style={styles.margin} onClick ={onLogin}type='submit'>Login As User</button>
+      </form>
+
+
+      <form>
+        <div style={styles.margin} >
+            <label>Username</label>
+            <input  onChange={handleUsername}type='text' id='username' value={username}/>
+        </div>
+        <div style={styles.margin}>
+            <label>password</label>
+            <input onChange={handlePassword} value={password} type='password' />
+        </div>
+        <button style={styles.margin} onClick ={onLogin}type='submit'>Login As Worker</button>
       </form>
     </div>
   )
