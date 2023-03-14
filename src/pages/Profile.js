@@ -1,7 +1,7 @@
 import { hover } from '@testing-library/user-event/dist/hover'
 import React from 'react'
 
-export default function Profile() {
+export default function Profile({onLogout}) {
 
     // function display
     const DisplayProf =()=>{
@@ -64,12 +64,15 @@ export default function Profile() {
                         <li>primary language</li>
                         <li>contract type</li>
                     </ul>
+                    <button onClick={onLogout}>Logout</button>
                 </div>
                 <div id='displayer'style={styles.space}>
                         
                 </div>
+               
                 
             </div>
+            
             <>Edit</>
         </div>
 

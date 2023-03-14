@@ -15,7 +15,7 @@ export default function Content() {
       <section id='target'>
          <Target />
          <Dataone />
-         <Tabletasks />
+         {/* <Tabletasks /> */}
          <Provider />
          <Success text="I have been working from home for about 4 years. Currently,
           in these difficult times due to the Covid-19 pandemic, 

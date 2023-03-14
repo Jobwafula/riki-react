@@ -14,6 +14,8 @@ import Blog from './pages/Blog';
 import ContactSupport from './pages/ContactSupport';
 import Login from './pages/Login';
 import Upload from './pages/Upload';
+import Profile from './pages/Profile';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -22,12 +24,15 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='Apply' element={<Apply />}></Route>
-      <Route path='Login' element={<Login />}></Route>
+      <Route path='Login' element={<Login />}>
+        <Route to='/Login/Profile' element={<Profile />}></Route>
+      </Route>
       <Route path='Company' element={<Company />}></Route>
       <Route path='HowItWorks' element={<HowItWorks />}></Route>
       <Route path='Bloq' element={<Blog />}></Route>
       <Route path='ContactSupport' element={<ContactSupport />}></Route>
       <Route path='Upload' element={<Upload />}></Route>
+      <Route path='*' element={<NotFound />}></Route>
     </Routes>
   )
 }
